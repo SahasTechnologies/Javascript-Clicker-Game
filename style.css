@@ -1,0 +1,98 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp7667538.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    font-family: 'Merriweather', serif
+}
+
+
+#click-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* makes entire image clickable */
+}
+
+#click-button img {
+    display: block; /* removes inline gaps */
+    width: 200px;
+    height: auto;
+}
+
+#click-button-hover {
+    filter:brightness(0.9);
+}
+
+.game-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* cookie in middle, shop on right */
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.game-area {
+    text-align: center;
+}
+
+.shop-panel {
+    display: flex;
+    justify-content: flex-end; /* pushes shop to right edge */
+}
+
+#shop-container {
+    width: 400px; /* matches your shop-item width */
+}
+
+.shop-item {
+    display:flex; /*flexbox*/
+    justify-content: space-between;
+    align-items: center;
+    width: 400px; height: 100px;
+    margin-bottom: 5px;
+    padding: 0 20px;
+
+    background-image: url('https://orteil.dashnet.org/cookieclicker/img/storeTile.jpg');
+    background-size: 100% 400% /*big brain since the  actual image has 4 of those tiles */;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    cursor: pointer; /* entire tile is clickable */
+}
+
+.buy-display {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+
+
+.shop-item h3{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.shop-item p {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.shop-item button {
+    margin-left: 20px; /* pushes button to far right */
+}
+
+.money  {
+    color: #ffffff;
+    background-color: #b0aea1;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    text-align: center;
+}
+
+/* nice amination*/
+#click-button:hover {
+    filter: brightness(0.9);
+}
